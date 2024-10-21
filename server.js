@@ -23,6 +23,7 @@ const allowedOrigins = [
   "http://localhost:3001",
   "http://localhost:5173",
   "https://portfolio-admin-site.vercel.app",
+  "https://portfolio-front-eight-blond.vercel.app",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
