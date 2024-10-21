@@ -33,6 +33,7 @@ const corsOptions = {
     }
   },
   credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
