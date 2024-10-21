@@ -25,8 +25,9 @@ router.post("/login", async (req, res) => {
 
   res.cookie("accessToken", accessToken, {
     httpOnly: true,
-    sameSite: "strict",
+    sameSite: "none",
     maxAge: 3600000,
+    secure: true,
   });
   const currentTime = new Date().toLocaleString();
   console.log(`Authenticated user: ${user.username} a las ${currentTime}`);
