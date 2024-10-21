@@ -6,7 +6,7 @@ import bcryptjs from "bcryptjs";
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
+router.get("/", authenticateToken, refreshCookie, async (req, res) => {
   try {
     const users = await User.find({ status: true }).sort({ createdAt: "desc" });
     res.json({ items: users });
