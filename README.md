@@ -46,7 +46,7 @@ To start the application in development mode:
    npm run dev
    ```
 
-The application will be accessible at `http://localhost:5000`.
+The application will be accessible at `http://localhost:5000`
 
 ## Deploying to Production
 

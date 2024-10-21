@@ -22,7 +22,7 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:3001",
   "http://localhost:5173",
-  "https://mi-sitio.com",
+  "https://myportfolioback-dxg3hwdycqhch7c0.eastus-01.azurewebsites.net",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
