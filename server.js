@@ -36,15 +36,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use(
-  session({
-    cookie: {
-      secure: true, // para HTTPS
-      sameSite: "none", // permite cookies en solicitudes cross-site
-      domain: ".azurewebsites.net", // o tu dominio personalizado
-    },
-  })
-);
 
 async function connectDB() {
   try {
